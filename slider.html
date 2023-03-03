@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                width: 100%;
+                height: 100vh;
+                background-color: #222;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+            }
+            .swiper {
+                width: 80%;
+                height: fit-content;
+            }
+            .swiper img {
+                width: 100%;
+
+            }
+        </style>
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      />
+ 
+    </head>
+    <body>
+        <div class="container">
+            
+<div class="swiper">
+   
+    <div class="swiper-wrapper">
+     
+      <div class="swiper-slide"><img src="https://backiee.com/static/wpdb/wallpapers/5120x2880/273613.jpg"></div>
+      <div class="swiper-slide"><img src="https://th.bing.com/th/id/OIP.H4fTwcKAdp7ZRv2N-SNPowHaEo?pid=ImgDet&rs=1"></div>
+      <div class="swiper-slide"><img src="https://th.bing.com/th/id/OIP.XeatAyyLbm4X4rM1bTDdPQHaFj?pid=ImgDet&w=1280&h=960&rs=1"></div>
+    
+    </div>
+  
+    <div class="swiper-pagination"></div>
+  
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        
+        <script>
+            const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+        </script>
+    </body>
+</html>
